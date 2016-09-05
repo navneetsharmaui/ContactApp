@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar_new_contact"
+        layout="@layout/tool_bar">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/toolbar_new_contact">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="11"
+        android:id="@+id/editText_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Phone"
+        android:ems="11"
+        android:id="@+id/editText_phone"
+        android:layout_below="@+id/editText_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:ems="11"
+        android:id="@+id/editText_email"
+        android:layout_below="@+id/editText_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/Add_contact_button"
+        android:layout_below="@+id/editText_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_name"
+        android:layout_toLeftOf="@+id/editText_name"
+        android:layout_marginTop="39dp"
+        android:layout_marginRight="15dp"
+        android:src="@android:drawable/ic_menu_info_details"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_phone"
+        android:layout_below="@+id/editText_name"
+        android:layout_toLeftOf="@+id/editText_phone"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="15dp"
+        android:src="@android:drawable/ic_menu_call"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_email"
+        android:layout_below="@+id/editText_phone"
+        android:layout_toLeftOf="@+id/editText_email"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="15dp"
+        android:src="@android:drawable/sym_action_email"
+        />
+        </RelativeLayout>
+</RelativeLayout>
